@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chase Hu</title>
+</head>
+
+<body>
+    <h1>Hello.👋</h1>
+    <p>My name is Chase Hu.</p>
+    <p>I am an software developer. You can follow me on <a class="contact" target="_blank"
+            href="https://github.com/huchase">GitHub</a>.</p>
+
+    <p>You can visit my <a class="contact" target="_blank" href="https://huchase.github.io">blog</a> to know more about
+        me.</p>
+    <p>Outside of programming, I enjoy video games, such as <a target="_blank"
+            href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild">BOTW</a>, <a target="_blank"
+            href="https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice">Sekiro</a> and <a target="_blank"
+            href="https://en.wikipedia.org/wiki/Celeste_(video_game)">Celeste</a>.</p>
+    <p>And, I am willing to try all kinds of sports.</p>
+
+    <style>
+        body {
+            font-size: calc(15px + 0.33vw);
+            padding: 5vh 10vw;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .contact {
+            position: relative;
+        }
+
+        .contact:after {
+            content: '';
+            position: absolute;
+            top: 70%;
+            left: -0.1em;
+            right: -0.1em;
+            bottom: 0;
+            transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+            background-color: rgba(79, 192, 141, 0.5);
+        }
+
+        .contact:hover:after {
+            top: 0%;
+        }
+    </style>
+</body>
+
+</html>
