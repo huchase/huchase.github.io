@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  page-generator:
+    name: Generating pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Deploy to website
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        with:
+          folder: /
+          token: ${{ secrets.GA_TOKEN }}
+          branch: gh-pages
+          # repository-name: huchase/huchase.github.io
